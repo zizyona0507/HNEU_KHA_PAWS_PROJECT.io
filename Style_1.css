@@ -1,0 +1,752 @@
+body {
+	background-color: #202447;
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	color: #fff;
+}
+h1{text-align:center;}
+a{color: #fff;
+text-decoration:none;}
+										/*Головне фото*/
+#lapa {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: 700px;
+		background: linear-gradient(to bottom, transparent, #202447),url('photo/lapa.jpg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+
+
+#logo_full {
+	position: absolute;
+	top: 220px;
+	left: 40%;
+	width: 400px;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo_full img {
+	width: 350px;
+	height: auto;
+}
+
+										/*Shapka*/
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	background-color: #10162e;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+										/*Меню*/
+.menu > li {
+	list-style: none;
+	height: 100%;
+	padding: 0 40px;
+	color: #8498c1;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.menu > li:hover {
+	background-color: #2a2e47; 
+	color: #ebe6dc;
+}
+
+/*Рівень 2*/
+.menu > li > ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #2a2e47;
+	width: 350px;		   
+	list-style: none;
+}
+.menu > li:hover > ul {
+	display: block;
+}
+
+.menu ul li {
+	width: 100%;
+	position: relative;
+	border-top: 1px solid rgba(255,255,255,0.1)
+}
+
+.menu ul li a {
+	display: block;
+	padding: 15px 20px;
+	color: #ebe6dc;
+	text-decoration: none;
+	text-align: left;
+	white-space: normal;
+	line-height: 1.4;
+}
+
+.menu ul li:hover {
+	background-color: #293778;
+}
+
+/*Рівень 3*/
+.menu ul li > ul {
+	display: none;
+	position: absolute;
+	top: 0; 
+	right: 100%;
+	left: auto;
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	background-color: #384169;
+	list-style: none;
+}
+
+.menu ul li:hover > ul {
+	display: block;
+}
+
+										/*Логотип*/
+#logo{
+	padding:0;
+	margin-left:40px;
+	background:none;
+	display:flex;
+	align-items:center;
+}
+#logo img{
+	height:70px;
+	width:110px;
+	display:block;
+}
+
+										/*Блоки (Головна)*/
+#mc {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 0 100px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Верхній блок*/
+#vbl {
+	position:relative;
+	width: 100%;
+	height: 270px;
+	background-image: url('photo/01.png'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 40px;
+	padding-left:110px;
+	box-sizing:border-box;
+	transition: all 0.3s ease;
+	
+}
+#vbl:hover{
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0,4);
+	cursor:pointer;
+}
+#vbl a{
+  color: #fff;
+  text-decoration:none;
+}
+
+#bs {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+/*Лівий блок */
+#lbl {
+	background-image: url('photo/02.png'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 30%;
+	height: 250px;
+	border-radius: 15px;
+	padding: 20px;
+	display: block;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 30px;
+	padding-left:110px;
+	box-sizing:border-box;
+	transition: all 0.3s ease;
+}
+#lbl:hover{
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0,4);
+	cursor:pointer;
+}
+#lbl a {
+  color: #fff;
+  text-decoration:none;
+}
+
+/*Правий блок */
+#pbl {
+	background-image: url('photo/03.png'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 70%;
+	height: 250px;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 30px;
+	padding-left:60px;
+	box-sizing:border-box;
+	flex-direction: column;
+	transition: all 0.3s ease;
+}
+#pbl p {
+	max-width:60%;
+	font-size: 16px;
+	font-weight:1;
+}
+#pbl:hover{
+	transform: scale(1.03);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0,4);
+	cursor:pointer;
+}
+#pbl a {
+  color: #fff;
+  text-decoration:none;
+}
+										
+.bl1 {
+	display: flex;
+	width: auto;
+	height: auto;
+	background-color: #2a2e47;
+	border-radius: 15px;
+	overflow: hidden; 
+	flex-direction: column;
+	padding-bottom: 10px;
+	color:#ebe6dc;
+	max-width: 100%;
+	margin:0 20px;
+	padding:40px 10px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.bl1 h1{
+	margin-bottom:20px;
+
+}
+
+.bl {
+	display: flex;
+	width: auto;
+	max-width:100%;
+	height: 350px;
+	background-color: #8498c1;
+	border-radius: 15px;
+	overflow: hidden; 
+	margin-bottom: 60px;
+	min-height: 350px;
+	margin: 20px 20px;
+}
+
+.bl-img {
+	width: 500px;
+	height: 350px; 
+}
+
+.bl-img img {
+	width: 400px; 
+	height: 350px;
+	object-fit: cover;
+	display: block;
+	border: 5px solid white;
+}
+
+
+.txt {
+	padding: 20px;
+	color: #ebe6dc;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+}
+
+.txt h3 {
+	margin-top: 0;
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+.txt p {
+	font-size: 20px;
+	line-height: 20px;
+	margin: 2;
+}
+
+											/*Низ екрану*/
+#nizch {
+	background-color: #10162e;
+	color: #ebe6dc;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-top: 20px; 
+	width: 100%;
+}
+
+.nizbl {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.nizcolonki {
+	flex: 1;
+	padding: 0 15px;
+}
+
+.nizcolonki h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #1a3e8f;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+.nizcolonki p {
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.nizcolonki a {
+	color: #FFF;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.nizcolonki a:hover {
+	color: #1a3e8f;
+}
+
+
+.copyright {
+	text-align: center;
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+											/*Велике фото з градієнтом*/
+											
+#GradientPh_AU {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: 700px;
+	background: linear-gradient(to bottom, transparent, #202447),url('photo/AU1.jpg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+
+#GradientPh_Di {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: 700px;
+	background: linear-gradient(to bottom, transparent, #202447),url('photo/Di1.jpg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+
+#GradientPh_text {
+	position: absolute;
+	top: 220px;
+	left: 37%;
+	width: 400px;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+											/*ПРО НАС*/
+											/*Мапа*/
+.mtr {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+	max-width: 1200px;
+	margin: 40px auto; 
+	border-radius: 15px;
+}
+
+.textadr {
+	color: #FFF;
+	font-size: 18px;
+	line-height: 1.6;
+	max-width: 700px;
+	background-color: #2a2e47; 
+	padding: 30px;
+	border-radius: 15px;
+	max-width: 700px;
+}
+
+.textadr h3 {
+	color: #8498c1;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+											/* Таблиця*/
+#ProNasTabl {
+	width: 100%;
+	border-collapse: collapse;
+}
+#ProNasTabl td {
+	width: 50%;
+	padding: 30px;
+	vertical-align: middle;
+}
+
+.textTabl h2 {
+	margin-top: 0;
+	color:#8498c1;
+}
+
+.textTabl p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.photoTabl img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.big-photo {
+	padding-top: 50px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.bigPhotoTabl img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 20px;
+}
+											/*ДІЯЛЬНІСТЬ*/
+
+.bl2 {
+	position:relative;
+	display: flex;
+	width: auto;
+	height: auto;
+	background-color: #2a2e47;
+	border-radius: 15px;
+	overflow: hidden; 
+	flex-direction: column;
+	justify-content:center;
+	padding-bottom: 30px;
+	color:#ebe6dc;
+	max-width: 100%;
+	margin:0 20px;
+	margin-top: 20px;
+	padding:0 10px;
+	font-size: 18px;
+	line-height: 1.5;
+	height: auto;
+}
+.bl2 h1{
+	color: #8498c1;
+}
+.bl2 h2{
+	color: #8498c1;
+}
+.bl2 h3{
+	color: #ebe6dc;
+	text-align: center;
+}
+.bl2 h4 a{
+	color: #8498c1;
+	text-decoration:none;}
+.bl3 {
+	position:relative;
+	display: flex;
+	width: auto;
+	height: auto;
+	background-color: #ebe6dc;
+	border-radius: 15px;
+	overflow: hidden; 
+	flex-direction: column;
+	justify-content:center;
+	padding-bottom: 30px;
+	color:#2a2e47;
+	max-width: 100%;
+	margin:0 20px;
+	margin-top: 20px;
+	padding:0 10px;
+	font-size: 18px;
+	line-height: 1.5;
+	height: auto;
+	text-align:center;
+}
+.bl3 h1{
+	color: #ba7425;
+}
+.bl3 h2 a{
+	color: #ba7425;
+	text-decoration:none;
+}
+.bl3 h3{
+	color: #8498c1;
+}
+
+								/* Волонтерська */
+
+.vol_bl {
+   
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.vol-big-photo img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.vol_text p {
+	color: #FFF;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 40px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.vol_photo {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.vol_photo img {
+	width: 23%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+								/* Анкета */
+.formabl {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 40px;
+	background-color: #2a2e47;
+	border-radius: 20px;
+	color: #FFF;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.formabl h1 {
+	text-align: center;
+	color: #8498c1;
+	margin-bottom: 10px;
+}
+
+.formabl p {
+	text-align: center;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+input, select, textarea {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #3b4060;
+	color: #FFF;
+	font-size: 16px;
+	box-sizing: border-box;
+
+}
+
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #cfd8dc;
+}
+
+}
+.input-group {
+	flex: 1;
+}
+
+/* Кнопка відправки */
+.vidprav {
+	width: 100%;
+	padding: 15px;
+	background-color: #8498c1;
+	color: #202447;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#GradientPh_POD {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: 700px;
+	background: linear-gradient(to bottom, transparent, #202447),url('photo/podyaka.jpg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+#GradientPh_text_POD{
+	position: absolute;
+	top: 220px;
+	left: 35%;
+	width: 500px;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 15px;
+	display: flex;
+	justify-content: top;
+	gap:20px;
+	padding-top:20px;
+	padding-bottom:40px;
+	text-align: center;
+	flex-direction:column;
+	color: #202447;
+	font-size: 18px;
+}
+#golovny{
+	position: absolute;
+	top: 220px;
+	left: 35%;
+	width: 500px;
+	height: auto;
+	background-color: #8498c1;
+	color: #202447;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-top:15%;
+}
+
+								/*Благодійність фон*/
+								
+#GradientPh_BLAG {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: 700px;
+	background: linear-gradient(to bottom, transparent, #202447),url('photo/Blago1.jpg'); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+}
+
+
+.contBlago {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+.BlagoBl {
+	display: flex;
+	position: center;  
+	justify-content: center;
+	width: 30%;
+	height: 150px;
+	gap: 20px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	margin-left: 35%;
+	background-size: cover;
+	background-position: center;
+	background-color: #f4efe6;
+	align-items: center;
+	border-radius: 15px; 
+	transition: transform 0.3s ease,
+	
+}
+.BlagoBl:hover {
+transform: translateY(-10px) scale(1.05);
+cursor: pointer;
+}
+
+.BlagoBl h2 a {
+	text-align:center;
+	margin: 0;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.BlagoBl img {
+	max-width:200px;
+	max-height:200px;
+}
